@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>巴比恩國外遊記 </title>
+
+<style>
+body {
+  font-family: "Times New Roman", serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e6f2ff, #e6fce6);
+  color: #444;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px 0;
+}
+
+.nav-container { 
+  max-width:1000px; 
+  margin:0 auto; 
+  display:flex; 
+  justify-content:flex-end; 
+  padding:0 30px; 
+}
+
+.nav-links a { 
+  margin-left:15px; 
+  color:#336699; 
+  text-decoration:none; 
+  font-weight:500; 
+}
+
+.nav-links a:hover { 
+  color:#003366; 
+  text-decoration:underline; 
+}
+
+.content { 
+  max-width:960px; 
+  background:#fff; 
+  padding:40px; 
+  margin:30px auto; 
+  border-radius:12px; 
+  box-shadow:0 4px 12px rgba(0,0,0,0.1); 
+}
+
+h1.title { 
+  font-size:40px; 
+  font-weight:bold; 
+  text-align:center; 
+  color:#336699; 
+  margin:20px 0 30px; 
+}
+
+ul { 
+  list-style: none; 
+  padding-left: 0; 
+}
+
+ul li { 
+  margin: 10px 0; 
+  font-size: 25px; 
+}
+
+.table-container { 
+  overflow-x:auto; 
+  margin-top:15px; 
+}
+
+/* 表格主體 */
+.tra-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family:"Times New Roman", serif;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 所有儲存格 */
+.tra-table td {
+  border:1px solid #ddd;
+  padding:12px;
+  font-size:20px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+/* 第一列樣式 */
+.tra-table tr:first-child td {
+  border-top:3px solid #000;
+  border-bottom:3px solid #000;
+  font-weight:700;
+  font-size:25px;
+  background:linear-gradient(to right,#dbeafe,#dcfce7);
+  color:#003366;
+  text-align: center
+}
+
+/* 第一欄樣式 */
+.tra-table td:first-child {
+  font-weight:700;
+  font-size:25px;
+  background:linear-gradient(to bottom,#dbeafe,#dcfce7);
+  color:#003366;
+  border-right:3px solid #000;
+  text-align: center;
+}
+
+/* 左上角修正 */
+.tra-table tr:first-child td:first-child {
+  border-top:3px solid #000;
+  border-bottom:3px solid #000;
+  border-right:3px solid #000;
+  text-align: center;
+}
+
+.tra-table tr:not(:first-child) {
+  height: 100px;
+}
+
+/* 最底線 */
+.tra-table tr:last-child td {
+  border-bottom:3px solid #000;
+}
+
+/* rowspan 底線補強 */
+.tra-table td[rowspan] {
+  border-bottom:3px solid #000;
+}
+
+.time-text {
+  font-size: 16px;   /* 調整你想要的大小 */
+  color: #666;       /* 可選，讓附註淡一點 */
+  font-weight: normal; 
+  font-style: normal; /* 或 italic，看喜好 */
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="nav-container">
+    <div class="nav-links">
+      <a href="#">⭐巴比恩的追星故事</a>
+      <a href="#">💬 巴比恩的Dcard個人牆</a>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <h1 class="title">巴比恩國外遊記</h1>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#">五大宮殿資訊整理</a></li>
+        <li>
+          <div class="table-container">
+            <table class="tra-table">
+              <tr>
+                <td><a>2025</a><br>
+		    <a>首爾自由行</a></td>
+                <td>Day1</td>
+                <td>Day2</td>
+                <td>Day3</td>
+                <td>Day4</td>
+                <td>Day5</td>
+              </tr>
+
+              <tr>
+                <td>上午</td>
+                <td><a>- 坐飛機 </a>
+		    <br><span class="time-text">(0730~1100 長榮)</span></td>
+                <td>- 景福宮</td>
+                <td>- 臨津閣</td>
+                <td>- 宗廟<br>- 雲峴宮</td>
+                <td rowspan="2">
+                  坐飛機
+		    <br><span class="time-text">(1600~1830 長榮)</span></td>
+                </td>
+              </tr>
+
+              <tr>
+                <td>下午</td>
+                <td>- 圜丘壇<br>- 慶熙宮<br>- 首爾塔</td>
+                <td>- 德壽宮</td>
+                <td><a>- DMZ</a><a style="font-size: 15px;">(+第三隧道)</a><br>- 都羅山展望台<br>- 統一村</td>
+                <td><a>- 昌德宮</a><span class="time-text">(+秘苑)</span><br>- 昌慶宮</td>
+              </tr>
+
+            </table>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+</div>
+
+</body>
+</html>
